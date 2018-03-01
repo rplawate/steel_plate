@@ -4,7 +4,7 @@ from sklearn.cross_validation import train_test_split
 import pandas as pd
 from sklearn.metrics import accuracy_score
 from sklearn.neighbors import KNeighborsClassifier
-path='E:\\Udacity\\steelplate-data\\features.xlsx'  #give path where extracted features are saved
+path='features.xlsx'  #give path where extracted features are saved
 
 abc=pd.read_excel(path,header=None)
 
