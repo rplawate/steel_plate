@@ -8,8 +8,8 @@ path='features.xlsx'  #give path where extracted features are saved
 
 abc=pd.read_excel(path,header=None)
 
-X=np.array((abc.as_matrix())[1:,:])
-Y=X[:,6]
+X=np.array((abc.as_matrix())[1:,1:])
+Y=X[:,5]
 X=X[:,0:5]
 X_train, X_test, y_train, y_test = train_test_split(X,Y,test_size=0.2,random_state=10)
 y_train = y_train.astype('int')
